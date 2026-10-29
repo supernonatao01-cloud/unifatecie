@@ -6,35 +6,54 @@
 <title>UniFatecie EAD — Graduação e Pós-Graduação a distância | Polo Cajazeiras</title>
 <meta name="description" content="Graduação, segunda graduação e pós-graduação EAD na UniFatecie Centro Universitário. Mensalidades a partir de R$ 76,50 pagando em dia. Matrícula online. Polo Cajazeiras e mais 7 polos.">
 <meta name="theme-color" content="#08080a">
-<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="UniFatecie EAD — Estude onde estiver. Chegue onde quiser.">
+<meta property="og:description" content="Graduação, 2ª graduação e pós-graduação EAD. Mensalidades a partir de R$ 76,50. Matrícula online — Polo Cajazeiras.">
+<meta property="og:image" content="https://supernonatao01-cloud.github.io/unifatecie/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/mark-front.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
 
+<!-- ícones (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h5v-6h4v6h5V10"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2.5 9 2.5 12 0v-5"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.200 7-12a7 7 0 1 0-14 0c0 5.800 7 12 7 12Z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.470 14.380c-.3-.15-1.760-.87-2.030-.97-.27-.1-.47-.15-.67.15-.2.300-.77.970-.94 1.160-.17.200-.35.220-.64.080-.3-.15-1.260-.46-2.390-1.470-.88-.79-1.480-1.760-1.650-2.060-.17-.3-.02-.46.130-.61.130-.13.300-.35.450-.52.150-.17.200-.3.300-.5.100-.2.050-.37-.02-.52-.08-.15-.67-1.610-.92-2.210-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.080-.79.370-.27.300-1.040 1.020-1.040 2.480 0 1.460 1.070 2.880 1.210 3.070.15.200 2.100 3.200 5.080 4.490.71.310 1.260.49 1.690.63.710.230 1.360.200 1.870.12.570-.09 1.760-.72 2.010-1.410.25-.69.250-1.290.17-1.410-.07-.12-.27-.2-.57-.35m-5.420 7.400h-.01a9.870 9.870 0 0 1-5.030-1.380l-.36-.21-3.740.98 1-3.650-.24-.37a9.860 9.860 0 0 1-1.510-5.260c0-5.450 4.440-9.880 9.890-9.880 2.640 0 5.120 1.030 6.990 2.900a9.830 9.830 0 0 1 2.890 6.990c0 5.450-4.440 9.880-9.880 9.880m8.410-18.300A11.820 11.820 0 0 0 12.050 0C5.500 0 .16 5.340.16 11.890c0 2.100.55 4.140 1.590 5.950L.06 24l6.300-1.650a11.880 11.880 0 0 0 5.680 1.450h.01c6.550 0 11.890-5.340 11.890-11.890a11.820 11.820 0 0 0-3.480-8.410Z"/></symbol>
+  </defs>
+</svg>
+
 <div class="progress" id="progress" aria-hidden="true"></div>
 
-<!-- ===================== NAV ===================== -->
+<!-- ===================== TOPO ===================== -->
 <header class="nav" id="nav">
   <div class="nav__in">
     <a href="#inicio" class="brand" aria-label="UniFatecie — início">
-      <img src="assets/logo-mark-light.png" alt="" width="34" height="34">
+      <img src="assets/mark-48.png" alt="" width="34" height="34">
       <span class="brand__txt"><b>Uni</b>Fatecie<small>Centro Universitário</small></span>
     </a>
-    <nav class="nav__links" id="navLinks" aria-label="Principal">
-      <a href="#modalidades">Modalidades</a>
-      <a href="#cursos">Cursos</a>
-      <a href="#valores">Valores</a>
-      <a href="#pos">Pós-graduação</a>
-      <a href="#polos">Polos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <div class="nav__cta">
-      <button class="btn btn--sm btn--o" data-open-enroll>Matricule-se</button>
-      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-    </div>
+    <button class="btn btn--sm btn--o" data-open-enroll>Matricule-se</button>
   </div>
 </header>
 
@@ -42,40 +61,54 @@
 
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="inicio">
-  <canvas id="hero3d" aria-hidden="true"></canvas>
-  <div class="hero__glow hero__glow--a"></div>
-  <div class="hero__glow hero__glow--b"></div>
+  <div class="hero__bg"></div>
 
-  <div class="wrap hero__in">
-    <div class="hero__copy">
-      <span class="eyebrow reveal"><i></i> Polo Cajazeiras · Mega Polo UniFatecie</span>
-      <h1 class="reveal d1">Estude onde estiver.<br><span class="grad">Chegue onde quiser.</span></h1>
-      <p class="lead reveal d2">Graduação, segunda graduação e pós-graduação <b>100% EAD</b> com a qualidade de um Centro Universitário — e mensalidades a partir de <b>R$&nbsp;76,50</b>*.</p>
-      <div class="hero__btns reveal d3">
-        <button class="btn btn--o btn--lg" data-open-enroll>Quero me matricular <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
-        <a class="btn btn--ghost btn--lg" href="#" data-wa="Olá! Vim pelo site e quero saber mais sobre os cursos da UniFatecie.">
-          <svg viewBox="0 0 24 24" class="ico-wa"><path d="M20.5 3.5A11.9 11.9 0 0 0 1.9 17.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5h0a11.9 11.9 0 0 0 8.5-20Zm-8.5 18.2h0a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.4.9.9-3.3-.2-.4a9.9 9.9 0 1 1 8.1 4.4Zm5.4-7.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6a.6.6 0 0 0 0-.6c-.1-.1-.7-1.6-.9-2.2s-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2.100.9 2.900 1 3.900.8a3.300 3.300 0 0 0 2.200-1.600 2.700 2.700 0 0 0 .2-1.600c-.1-.1-.3-.2-.6-.3Z"/></svg>
-          Falar no WhatsApp</a>
+  <div class="stage" id="stage" aria-hidden="true">
+    <canvas class="sparks" id="sparks"></canvas>
+    <div class="stage__halo"></div>
+    <div class="scene">
+      <div class="logo3d" id="logo3d">
+        <div class="ring ring--a"><i></i></div>
+        <div class="ring ring--b"><i></i></div>
+        <div class="slab" id="slab">
+          <i class="ly ly--front"></i>
+          <i class="shine"></i>
+        </div>
+        <b class="gem g1"></b><b class="gem g2"></b><b class="gem g3"></b>
       </div>
-      <ul class="hero__chips reveal d4">
-        <li><b>66%</b> de desconto*</li>
-        <li><b>100%</b> online</li>
-        <li><b>8</b> polos de apoio</li>
-      </ul>
-      <p class="fine reveal d4">*Mensalidade com desconto de campanha + pontualidade (Grupo Base). Consulte regulamento.</p>
     </div>
   </div>
 
-  <a href="#numeros" class="scrollcue" aria-label="Rolar para baixo"><span></span></a>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <span class="eyebrow reveal"><i></i> Polo Cajazeiras · Mega Polo</span>
+      <h1 class="reveal d1">Estude onde estiver.<br><span class="grad">Chegue onde quiser.</span></h1>
+      <p class="lead reveal d2">Graduação, 2ª graduação e pós-graduação <b>100% EAD</b> com a qualidade de um Centro Universitário.</p>
+
+      <div class="pricepill reveal d2">
+        <span><small>mensalidades a partir de</small><b>R$&nbsp;76,50</b></span>
+        <em>66% OFF*</em>
+      </div>
+
+      <div class="hero__btns reveal d3">
+        <button class="btn btn--o btn--lg" data-open-enroll>Quero me matricular <svg class="ic"><use href="#i-arrow"/></svg></button>
+        <a class="btn btn--ghost btn--lg" href="#" data-wa="Olá! Vim pelo site e quero saber mais sobre os cursos da UniFatecie."><svg class="ic ic--f"><use href="#i-wa"/></svg> WhatsApp</a>
+      </div>
+      <p class="fine reveal d4">*Grupo Base: desconto de campanha + pontualidade. Consulte o regulamento.</p>
+    </div>
+  </div>
 </section>
+
+<!-- ===================== TICKER ===================== -->
+<div class="ticker" aria-hidden="true"><div class="ticker__t" id="ticker"></div></div>
 
 <!-- ===================== NÚMEROS ===================== -->
 <section class="numbers" id="numeros">
   <div class="wrap numbers__grid">
-    <div class="num reveal"><b data-count="83">0</b><span>cursos de graduação</span></div>
-    <div class="num reveal d1"><b data-count="150" data-suffix="+">0</b><span>cursos de pós-graduação</span></div>
-    <div class="num reveal d2"><b data-count="66" data-suffix="%">0</b><span>de desconto nas mensalidades*</span></div>
-    <div class="num reveal d3"><b data-count="8">0</b><span>polos na PB, CE, RN e PE</span></div>
+    <div class="num reveal"><b data-count="83">83</b><span>cursos de graduação</span></div>
+    <div class="num reveal d1"><b data-count="150" data-suffix="+">150+</b><span>cursos de pós-graduação</span></div>
+    <div class="num reveal d2"><b data-count="66" data-suffix="%">66%</b><span>de desconto nas mensalidades*</span></div>
+    <div class="num reveal d3"><b data-count="8">8</b><span>polos na PB, CE, RN e PE</span></div>
   </div>
 </section>
 
@@ -84,55 +117,53 @@
   <div class="wrap">
     <header class="sec__head center">
       <span class="eyebrow eyebrow--dark reveal"><i></i> Modalidades</span>
-      <h2 class="reveal d1">O caminho certo para<br>cada fase da sua carreira.</h2>
-      <p class="sub reveal d2">Escolha como começar. Todas as matrículas são feitas online, pelos canais oficiais da UniFatecie.</p>
+      <h2 class="reveal d1">O caminho certo para cada fase da sua carreira.</h2>
+      <p class="sub reveal d2">Todas as matrículas são feitas online, pelos canais oficiais da UniFatecie.</p>
     </header>
-
-    <div class="cards4">
+  </div>
+  <div class="snap">
+    <div class="cards4 wrap">
       <article class="card3d reveal" data-tilt>
         <div class="card3d__in">
-          <div class="card3d__ico"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2.500 9 2.500 12 0v-5"/></svg></div>
+          <div class="card3d__ico"><svg class="ic"><use href="#i-cap"/></svg></div>
           <h3>Graduação EAD</h3>
           <p>Bacharelados, licenciaturas e tecnólogos com início imediato por Vestibular Online ou nota do ENEM.</p>
           <ul><li>Desconto de <b>66%</b>+ na mensalidade</li><li>Anuidade de <b>R$ 49,90</b></li></ul>
-          <a class="link" href="#cursos">Ver os 83 cursos <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="link" href="#cursos" data-filter="todos">Ver os 83 cursos <svg class="ic"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
-
       <article class="card3d reveal d1" data-tilt>
         <div class="card3d__in">
-          <div class="card3d__ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div class="card3d__ico"><svg class="ic"><use href="#i-monitor"/></svg></div>
           <h3>Semipresencial</h3>
-          <p>Cursos da saúde, engenharias, licenciaturas e mais, com atividades práticas, estágios e encontros no polo.</p>
+          <p>Saúde, engenharias, licenciaturas e mais, com atividades práticas, estágios e encontros no polo.</p>
           <ul><li>Apoio presencial no <b>polo</b></li><li>Laboratórios e estágios</li></ul>
-          <a class="link" href="#cursos" data-filter="semi">Ver cursos semipresenciais <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="link" href="#cursos" data-filter="semi">Ver semipresenciais <svg class="ic"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
-
       <article class="card3d reveal d2" data-tilt>
         <div class="card3d__in">
-          <div class="card3d__ico"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></div>
+          <div class="card3d__ico"><svg class="ic"><use href="#i-users"/></svg></div>
           <h3>2ª Graduação</h3>
-          <p>Já tem diploma? Aproveite seus estudos anteriores e conquiste uma nova formação em tempo reduzido.</p>
+          <p>Já tem diploma? Aproveite seus estudos e conquiste uma nova formação em tempo reduzido.</p>
           <ul><li>A partir de <b>6 meses</b> a 1 ano</li><li>Aproveitamento de estudos</li></ul>
-          <a class="link" href="#diploma">Como funciona <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="link" href="#diploma">Como funciona <svg class="ic"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
-
       <article class="card3d reveal d3" data-tilt>
         <div class="card3d__in">
-          <div class="card3d__ico"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div class="card3d__ico"><svg class="ic"><use href="#i-layers"/></svg></div>
           <h3>Pós-Graduação</h3>
-          <p>Especializações e MBAs em 6 áreas: Educação, Gestão, Engenharia, Direito, Saúde e Inovação (IA).</p>
+          <p>Especializações e MBAs em 6 áreas: Educação, Gestão, Engenharia, Direito, Saúde e IA.</p>
           <ul><li>Matrícula <b>R$ 29,90</b></li><li>12 parcelas a partir de <b>R$ 29,90</b></li></ul>
-          <a class="link" href="#pos">Explorar pós <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="link" href="#pos">Explorar pós <svg class="ic"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ===================== EXPERIÊNCIA (scroll story) ===================== -->
+<!-- ===================== EXPERIÊNCIA ===================== -->
 <section class="story" id="experiencia">
   <div class="story__stick">
     <div class="story__glow"></div>
@@ -140,30 +171,30 @@
       <div class="story__texts">
         <span class="eyebrow"><i></i> Experiência EAD</span>
         <div class="story__step is-on" data-step="0">
-          <h2>Sua sala de aula<br><span class="grad">cabe no bolso.</span></h2>
+          <h2>Sua sala de aula <span class="grad">cabe no bolso.</span></h2>
           <p>Estude pelo celular, tablet ou computador. As aulas ficam disponíveis quando você precisar.</p>
         </div>
         <div class="story__step" data-step="1">
-          <h2>No seu ritmo,<br><span class="grad">sem pressa.</span></h2>
+          <h2>No seu ritmo, <span class="grad">sem pressa.</span></h2>
           <p>Organize os estudos em volta da sua rotina — trabalho, família e vida. Você decide quando e onde.</p>
         </div>
         <div class="story__step" data-step="2">
-          <h2>E com apoio<br><span class="grad">de gente de verdade.</span></h2>
+          <h2>Com apoio <span class="grad">de gente de verdade.</span></h2>
           <p>Seu polo está por perto para tirar dúvidas, orientar a matrícula e acompanhar sua jornada.</p>
         </div>
         <div class="story__dots"><i class="on"></i><i></i><i></i></div>
       </div>
 
       <div class="story__stage" aria-hidden="true">
-        <div class="phone" id="phone">
+        <div class="phone-box"><div class="phone" id="phone">
           <div class="phone__side"></div>
           <div class="phone__body">
             <div class="phone__notch"></div>
             <div class="phone__screen">
-              <div class="ui__top"><img src="assets/logo-mark-light.png" alt=""><span>Olá, estudante!</span></div>
+              <div class="ui__top"><img src="assets/mark-48.png" alt="" width="26" height="26"><span>Olá, estudante!</span></div>
               <div class="ui__ring">
                 <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" class="bg"/><circle cx="60" cy="60" r="50" class="fg" id="ring"/></svg>
-                <div><b id="ringTxt">0%</b><small>do módulo</small></div>
+                <div><b id="ringTxt">8%</b><small>do módulo</small></div>
               </div>
               <div class="ui__list">
                 <div class="ui__item"><i></i><div><b>Aula 12 · Introdução</b><small>Vídeo · 18 min</small></div></div>
@@ -173,7 +204,7 @@
               <div class="ui__btn">Continuar estudando</div>
             </div>
           </div>
-        </div>
+        </div></div>
         <div class="float f1">Mensalidade fixa<br><b>pagando em dia</b></div>
         <div class="float f2">Matrícula<br><b>100% online</b></div>
         <div class="float f3">Apoio no<br><b>polo</b></div>
@@ -182,32 +213,33 @@
   </div>
 </section>
 
-<!-- ===================== CURSOS (finder) ===================== -->
+<!-- ===================== CURSOS ===================== -->
 <section class="sec sec--light" id="cursos">
   <div class="wrap">
     <header class="sec__head center">
       <span class="eyebrow eyebrow--dark reveal"><i></i> Graduação EAD</span>
       <h2 class="reveal d1">Encontre o seu curso.</h2>
-      <p class="sub reveal d2">83 opções de graduação. Pesquise pelo nome ou filtre por tipo — o valor da mensalidade já aparece em cada curso.</p>
+      <p class="sub reveal d2">83 opções de graduação. Pesquise pelo nome ou filtre por tipo — o valor já aparece em cada curso.</p>
     </header>
 
     <div class="finder reveal">
       <label class="search">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg>
-        <input id="q" type="search" placeholder="Pesquisar curso… (ex.: Pedagogia, Engenharia, Nutrição)" autocomplete="off">
+        <svg class="ic"><use href="#i-search"/></svg>
+        <input id="q" type="search" placeholder="Pesquisar curso… (ex.: Pedagogia, Nutrição)" autocomplete="off" enterkeyhint="search">
       </label>
-      <div class="chips" id="chips" role="group" aria-label="Filtrar por tipo">
+      <div class="chips hscroll" id="chips" role="group" aria-label="Filtrar por tipo">
         <button class="chip on" data-f="todos">Todos</button>
         <button class="chip" data-f="Bacharelado">Bacharelado</button>
         <button class="chip" data-f="Licenciatura">Licenciatura</button>
         <button class="chip" data-f="Tecnólogo">Tecnólogo</button>
         <button class="chip" data-f="semi">Semipresencial</button>
       </div>
-      <div class="finder__meta"><span id="count">83 cursos</span><span class="muted">Valores mensais pagando até o vencimento</span></div>
+      <div class="finder__meta"><span id="count">83 cursos</span><span class="muted">Valores mensais pagando em dia</span></div>
     </div>
 
     <div class="grid-courses" id="courses"></div>
     <p class="empty" id="empty" hidden>Nenhum curso encontrado. Tente outro nome ou fale com a gente no WhatsApp.</p>
+    <div class="center"><button class="btn btn--dark" id="more" hidden>Mostrar mais cursos</button></div>
   </div>
 </section>
 
@@ -217,11 +249,11 @@
   <div class="wrap">
     <header class="sec__head center">
       <span class="eyebrow reveal"><i></i> Investimento</span>
-      <h2 class="reveal d1">Mensalidades que cabem<br><span class="grad">no seu planejamento.</span></h2>
+      <h2 class="reveal d1">Mensalidades que cabem <span class="grad">no seu planejamento.</span></h2>
       <p class="sub reveal d2">Mais de 66% de desconto sobre o valor cheio. Selecione o grupo do seu curso.</p>
     </header>
 
-    <div class="tiers reveal" id="tiers" role="tablist" aria-label="Grupos de cursos"></div>
+    <div class="tiers hscroll reveal" id="tiers" role="tablist" aria-label="Grupos de cursos"></div>
 
     <div class="price3d reveal" id="priceCard" data-tilt data-tilt-max="6">
       <div class="price3d__in">
@@ -251,12 +283,12 @@
   <div class="wrap">
     <header class="sec__head center">
       <span class="eyebrow eyebrow--dark reveal"><i></i> Pós-Graduação EAD</span>
-      <h2 class="reveal d1">Especialize-se.<br>Aprenda rápido. Vá mais longe.</h2>
+      <h2 class="reveal d1">Especialize-se. Aprenda rápido. Vá mais longe.</h2>
       <p class="sub reveal d2">Mais de 150 cursos de pós-graduação lato sensu em 6 áreas — para qualquer profissional com diploma de graduação.</p>
     </header>
 
     <div class="pos reveal">
-      <div class="pos__tabs" id="posTabs" role="tablist"></div>
+      <div class="pos__tabs hscroll" id="posTabs" role="tablist"></div>
       <div class="pos__panel" id="posPanel">
         <div class="pos__plan">
           <span class="badge badge--o" id="posQtd"></span>
@@ -271,14 +303,17 @@
         <div class="pos__courses">
           <p class="muted">Alguns cursos da área</p>
           <ul id="posList"></ul>
-          <a class="link" data-wa="Olá! Quero ver a lista completa de cursos de pós-graduação." href="#">Ver a lista completa no WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <a class="link" data-wa="Olá! Quero ver a lista completa de cursos de pós-graduação." href="#">Ver a lista completa no WhatsApp <svg class="ic"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </div>
 
     <h3 class="subhead reveal">Especializações em destaque</h3>
-    <div class="destaque" id="destaque"></div>
-
+  </div>
+  <div class="snap">
+    <div class="destaque wrap" id="destaque"></div>
+  </div>
+  <div class="wrap">
     <ul class="facts reveal">
       <li><b>Sem exigência de graduação específica</b><span>Qualquer diploma de graduação reconhecido.</span></li>
       <li><b>TCC opcional</b><span>Escolha fazer ou não (taxa única de R$ 207,00 se optar).</span></li>
@@ -288,21 +323,21 @@
   </div>
 </section>
 
-<!-- ===================== SEGUNDA GRADUAÇÃO ===================== -->
+<!-- ===================== 2ª GRADUAÇÃO ===================== -->
 <section class="sec sec--dark" id="diploma">
   <div class="glow-bg glow-bg--2"></div>
   <div class="wrap diploma">
     <div class="diploma__copy">
       <span class="eyebrow reveal"><i></i> Portador de diploma</span>
-      <h2 class="reveal d1">Já é formado?<br><span class="grad">Estude menos, conquiste mais.</span></h2>
-      <p class="sub reveal d2">Com a 2ª graduação, seus estudos anteriores são aproveitados e o curso fica mais curto: <b>a partir de 6 meses</b> (tecnólogos) ou <b>1 ano</b> (bacharelados e licenciaturas), em 12 mensalidades.</p>
+      <h2 class="reveal d1">Já é formado? <span class="grad">Estude menos, conquiste mais.</span></h2>
+      <p class="sub reveal d2">Seus estudos anteriores são aproveitados e o curso fica mais curto: <b>a partir de 6 meses</b> (tecnólogos) ou <b>1 ano</b> (bacharelados e licenciaturas), em 12 mensalidades.</p>
       <ul class="checks reveal d3">
         <li>Disponível nos Grupos Base, 01, 02, 03 e 04</li>
         <li>Mesmas mensalidades com +66% de desconto</li>
         <li>Anuidade de R$ 49,90 no ato da inscrição</li>
         <li>Envie diploma e histórico da 1ª graduação</li>
       </ul>
-      <a class="btn btn--o btn--lg reveal d4" href="#" id="diplomaBtn" target="_blank" rel="noopener">Quero minha 2ª graduação <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="btn btn--o btn--lg reveal d4" href="#" id="diplomaBtn" target="_blank" rel="noopener">Quero minha 2ª graduação <svg class="ic"><use href="#i-arrow"/></svg></a>
       <p class="fine reveal d4">Link exclusivo do Polo Cajazeiras.</p>
     </div>
 
@@ -323,7 +358,7 @@
     </header>
     <ol class="steps">
       <li class="step reveal" data-tilt data-tilt-max="8"><span>01</span><h3>Escolha seu curso</h3><p>Navegue pelas opções de graduação ou pós e escolha a que combina com seus objetivos.</p></li>
-      <li class="step reveal d1" data-tilt data-tilt-max="8"><span>02</span><h3>Faça a inscrição online</h3><p>Entre pelo Vestibular Online ou use sua nota do ENEM. Pelos links oficiais, em poucos minutos.</p></li>
+      <li class="step reveal d1" data-tilt data-tilt-max="8"><span>02</span><h3>Faça a inscrição online</h3><p>Entre pelo Vestibular Online ou use sua nota do ENEM, pelos links oficiais, em poucos minutos.</p></li>
       <li class="step reveal d2" data-tilt data-tilt-max="8"><span>03</span><h3>Pague e comece</h3><p>Graduação: anuidade de R$ 49,90. Pós-graduação: matrícula de R$ 29,90. Pronto — é só estudar.</p></li>
     </ol>
     <div class="center reveal"><button class="btn btn--o btn--lg" data-open-enroll>Iniciar minha matrícula</button></div>
@@ -336,14 +371,12 @@
   <div class="wrap">
     <header class="sec__head center">
       <span class="eyebrow reveal"><i></i> Nossos polos</span>
-      <h2 class="reveal d1">Perto de você,<br><span class="grad">em 4 estados.</span></h2>
-      <p class="sub reveal d2">Toque em um polo no mapa. Cajazeiras é o nosso Mega Polo.</p>
+      <h2 class="reveal d1">Perto de você, <span class="grad">em 4 estados.</span></h2>
+      <p class="sub reveal d2">Toque em um polo. Cajazeiras é o nosso Mega Polo.</p>
     </header>
 
     <div class="polos reveal">
-      <div class="map" id="map">
-        <svg viewBox="0 0 800 440" id="mapSvg" role="img" aria-label="Mapa esquemático dos polos"></svg>
-      </div>
+      <div class="map" id="map"><svg viewBox="0 0 800 440" id="mapSvg" role="img" aria-label="Mapa esquemático dos polos"></svg></div>
       <aside class="polo__info" id="poloInfo">
         <span class="badge badge--o" id="poloTag">Mega Polo</span>
         <h3 id="poloName">Cajazeiras</h3>
@@ -352,7 +385,7 @@
         <a class="btn btn--o" href="#" data-wa="Olá! Quero informações sobre o polo." id="poloWa">Falar com o polo</a>
       </aside>
     </div>
-    <ul class="polo__list reveal" id="poloList"></ul>
+    <ul class="polo__list hscroll reveal" id="poloList"></ul>
   </div>
 </section>
 
@@ -368,26 +401,35 @@
     <div class="contact">
       <div class="contact__cards">
         <a class="ccard ccard--wa reveal" href="#" data-wa="Olá! Quero fazer minha matrícula na UniFatecie.">
-          <span class="ccard__ico"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 1.9 17.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5h0a11.9 11.9 0 0 0 8.5-20Z"/></svg></span>
+          <span class="ccard__ico"><svg class="ic ic--f"><use href="#i-wa"/></svg></span>
           <div><small>WhatsApp</small><b id="waShow">(83) 9105-4923</b><em>Toque para conversar</em></div>
         </a>
         <a class="ccard reveal d1" id="addrCard" href="#" target="_blank" rel="noopener">
-          <span class="ccard__ico"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.200 7-12a7 7 0 1 0-14 0c0 5.800 7 12 7 12Z"/><circle cx="12" cy="10" r="2.500"/></svg></span>
+          <span class="ccard__ico"><svg class="ic"><use href="#i-pin"/></svg></span>
           <div><small>Endereço</small><b>Av. Comandante Vital Rolim, 1346</b><em>Santa Cecília · próximo ao Hotel Oásis · Cajazeiras-PB</em></div>
         </a>
         <a class="ccard reveal d2" id="siteCard" href="#" target="_blank" rel="noopener">
-          <span class="ccard__ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+          <span class="ccard__ico"><svg class="ic"><use href="#i-globe"/></svg></span>
           <div><small>Site oficial</small><b>unifatecie.edu.br</b><em>Mais informações institucionais</em></div>
         </a>
         <div class="links reveal d3">
           <p class="muted">Links de matrícula</p>
-          <a class="lnk" id="lnkGrad" href="#" target="_blank" rel="noopener"><span>Graduação</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-          <a class="lnk" id="lnkPos" href="#" target="_blank" rel="noopener"><span>Pós-Graduação</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-          <a class="lnk" id="lnkSeg" href="#" target="_blank" rel="noopener"><span>2ª Graduação — Cajazeiras</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="lnk" id="lnkGrad" href="#" target="_blank" rel="noopener"><span>Graduação</span><svg class="ic"><use href="#i-ext"/></svg></a>
+          <a class="lnk" id="lnkPos" href="#" target="_blank" rel="noopener"><span>Pós-Graduação</span><svg class="ic"><use href="#i-ext"/></svg></a>
+          <a class="lnk" id="lnkSeg" href="#" target="_blank" rel="noopener"><span>2ª Graduação — Cajazeiras</span><svg class="ic"><use href="#i-ext"/></svg></a>
         </div>
       </div>
-      <div class="contact__map reveal d2">
-        <iframe id="mapFrame" title="Mapa do endereço do polo Cajazeiras" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="contact__map reveal d2" id="mapBox">
+        <div class="mapface">
+          <span class="mapface__pin"><svg class="ic"><use href="#i-pin"/></svg></span>
+          <b>Av. Comandante Vital Rolim, 1346</b>
+          <span>Santa Cecília · Cajazeiras-PB<br>Próximo ao Hotel Oásis</span>
+          <div class="mapface__btns">
+            <a class="btn btn--o" id="mapOpen" href="#" target="_blank" rel="noopener">Como chegar <svg class="ic"><use href="#i-ext"/></svg></a>
+            <button class="btn btn--dark" id="mapLoad" type="button">Ver mapa aqui</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -415,10 +457,10 @@
 <section class="final">
   <div class="final__glow"></div>
   <div class="wrap center">
-    <img src="assets/logo-mark-light.png" alt="" class="final__logo reveal" width="84" height="84">
-    <h2 class="reveal d1">Seu próximo capítulo<br><span class="grad">começa agora.</span></h2>
+    <img src="assets/mark-48.png" alt="" class="final__logo reveal" width="84" height="84">
+    <h2 class="reveal d1">Seu próximo capítulo <span class="grad">começa agora.</span></h2>
     <p class="sub reveal d2">Garanta sua vaga com as condições da campanha vigente.</p>
-    <div class="hero__btns reveal d3" style="justify-content:center">
+    <div class="hero__btns hero__btns--c reveal d3">
       <button class="btn btn--o btn--lg" data-open-enroll>Matricule-se agora</button>
       <a class="btn btn--ghost btn--lg" href="#" data-wa="Olá! Quero fazer minha matrícula na UniFatecie.">Chamar no WhatsApp</a>
     </div>
@@ -427,11 +469,11 @@
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
+<!-- ===================== RODAPÉ ===================== -->
 <footer class="foot">
   <div class="wrap foot__grid">
-    <div>
-      <img src="assets/logo-full-white.png" alt="UniFatecie Centro Universitário" class="foot__logo" width="200" height="58">
+    <div class="foot__brand">
+      <img src="assets/wordmark-white.png" alt="UniFatecie Centro Universitário" class="foot__logo" width="200" height="58" loading="lazy">
       <p class="muted">Polo Cajazeiras — Mega Polo UniFatecie.<br>Av. Comandante Vital Rolim, 1346, Santa Cecília<br>Próximo ao Hotel Oásis · Cajazeiras-PB</p>
     </div>
     <div>
@@ -457,30 +499,38 @@
   </div>
 </footer>
 
-<!-- WhatsApp flutuante -->
-<a class="wa-fab" href="#" data-wa="Olá! Vim pelo site e quero mais informações." aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 1.9 17.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5h0a11.9 11.9 0 0 0 8.5-20Z"/></svg>
-</a>
+<!-- ===================== DOCK (barra inferior estilo Apple) ===================== -->
+<nav class="dock" id="dock" aria-label="Navegação principal">
+  <div class="dock__in" id="dockIn" style="--n:5;--i:0">
+    <i class="dock__pill" aria-hidden="true"></i>
+    <a href="#inicio" class="dock__i on" data-tab="inicio"><svg class="ic"><use href="#i-home"/></svg><span>Início</span></a>
+    <a href="#cursos" class="dock__i" data-tab="cursos"><svg class="ic"><use href="#i-cap"/></svg><span>Cursos</span></a>
+    <a href="#valores" class="dock__i" data-tab="valores"><svg class="ic"><use href="#i-tag"/></svg><span>Valores</span></a>
+    <a href="#pos" class="dock__i" data-tab="pos"><svg class="ic"><use href="#i-layers"/></svg><span>Pós</span></a>
+    <a href="#contato" class="dock__i" data-tab="contato"><svg class="ic"><use href="#i-pin"/></svg><span>Contato</span></a>
+  </div>
+</nav>
 
-<!-- Modal de matrícula -->
+<a class="wa-fab" href="#" data-wa="Olá! Vim pelo site e quero mais informações." aria-label="Falar no WhatsApp"><svg class="ic ic--f"><use href="#i-wa"/></svg></a>
+
+<!-- Modal / sheet de matrícula -->
 <dialog class="modal" id="enroll">
   <div class="modal__in">
+    <i class="modal__grab" aria-hidden="true"></i>
     <button class="modal__x" data-close aria-label="Fechar">×</button>
     <h3>Como você quer estudar?</h3>
     <p class="muted">Escolha a modalidade para ir direto à matrícula oficial.</p>
     <div class="opts">
-      <a class="opt" id="oGrad" href="#" target="_blank" rel="noopener"><b>Graduação</b><span>Bacharelado, licenciatura e tecnólogo</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-      <a class="opt" id="oSeg" href="#" target="_blank" rel="noopener"><b>2ª Graduação</b><span>Para quem já tem diploma</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-      <a class="opt" id="oPos" href="#" target="_blank" rel="noopener"><b>Pós-Graduação</b><span>Especializações e MBAs</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
-      <a class="opt opt--wa" href="#" data-wa="Olá! Quero ajuda para fazer minha matrícula."><b>Prefiro falar com alguém</b><span>Atendimento no WhatsApp</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="opt" id="oGrad" href="#" target="_blank" rel="noopener"><b>Graduação</b><span>Bacharelado, licenciatura e tecnólogo</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt" id="oSeg" href="#" target="_blank" rel="noopener"><b>2ª Graduação</b><span>Para quem já tem diploma</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt" id="oPos" href="#" target="_blank" rel="noopener"><b>Pós-Graduação</b><span>Especializações e MBAs</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt opt--wa" href="#" data-wa="Olá! Quero ajuda para fazer minha matrícula."><b>Prefiro falar com alguém</b><span>Atendimento no WhatsApp</span><svg class="ic"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 </dialog>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/data.js"></script>
-<script src="js/logo-data.js"></script>
-<script src="js/hero3d.js"></script>
-<script src="js/main.js"></script>
+<script src="js/data.js" defer></script>
+<script src="js/hero.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

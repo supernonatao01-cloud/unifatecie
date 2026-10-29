@@ -1,17 +1,16 @@
 LANDING PAGE UNIFATECIE EAD
 ===========================
-Abrir: dê dois cliques em index.html (precisa de internet para a fonte, o 3D e o mapa).
+Abrir: dê dois cliques em index.html (precisa de internet só para a fonte Inter; o resto é local).
 
 Para trocar telefone, endereço, links de matrícula, valores, cursos ou polos:
   edite apenas  js/data.js
 
 Pastas:
-  index.html       estrutura da página
-  css/style.css    visual
-  js/data.js       TODOS os dados (contato, links, valores, cursos, polos)
-  js/hero3d.js     cena 3D do topo
-  js/main.js       interações
-  js/logo-data.js  logo embutida para o 3D (gerada de assets/logo-mark-light.png)
-  assets/          logos
+  index.html    estrutura da página (inclui a barra inferior "dock")
+  css/style.css visual (mobile-first)
+  js/data.js    TODOS os dados (contato, links, valores, cursos, polos)
+  js/hero.js    logo 3D do topo (CSS 3D, sem bibliotecas)
+  js/main.js    interações (dock, busca, valores, pós, mapa)
+  assets/       logos leves e imagem de compartilhamento (og.jpg)
 
-Para publicar: envie a pasta "site" inteira para qualquer hospedagem (Netlify, Vercel, Hostinger, etc.).
+Publicar: envie a pasta "site" inteira para qualquer hospedagem (GitHub Pages, Netlify, Vercel...).
