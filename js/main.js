@@ -158,10 +158,12 @@
   onScroll();
 
   /* ---------- helper: centraliza o item ativo em listas roláveis ---------- */
+  /* rola só a própria lista (scrollIntoView também rolava a seção inteira para o lado) */
   function centerInRow(btn) {
-    if (btn && btn.scrollIntoView && btn.parentElement.scrollWidth > btn.parentElement.clientWidth) {
-      btn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: reduce ? 'auto' : 'smooth' });
-    }
+    var row = btn && btn.parentElement;
+    if (!row || row.scrollWidth <= row.clientWidth) return;
+    var left = btn.offsetLeft - (row.clientWidth - btn.offsetWidth) / 2;
+    row.scrollTo({ left: Math.max(0, left), behavior: reduce ? 'auto' : 'smooth' });
   }
 
   /* ---------- buscador de cursos (com "mostrar mais") ---------- */
