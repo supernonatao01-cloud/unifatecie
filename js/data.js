@@ -5,8 +5,8 @@
 
 window.UNI = {
   contato: {
-    whatsappNumero: "558391054923",          // formato internacional p/ wa.me
-    whatsappExibicao: "(83) 9105-4923",
+    whatsappNumero: "5583991054923",          // formato internacional p/ wa.me
+    whatsappExibicao: "(83) 99105-4923",
     endereco: "Avenida Comandante Vital Rolim, 1346 — Bairro Santa Cecília",
     referencia: "Próximo ao Hotel Oásis",
     cidade: "Cajazeiras — PB",
