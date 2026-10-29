@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UniFatecie EAD — Graduação e Pós-Graduação a distância | Polo Cajazeiras</title>
+<meta name="description" content="Graduação, segunda graduação e pós-graduação EAD na UniFatecie Centro Universitário. Mensalidades a partir de R$ 76,50 pagando em dia. Matrícula online. Polo Cajazeiras e mais 7 polos.">
+<meta name="theme-color" content="#08080a">
+<link rel="icon" href="assets/logo-mark.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a href="#inicio" class="brand" aria-label="UniFatecie — início">
+      <img src="assets/logo-mark-light.png" alt="" width="34" height="34">
+      <span class="brand__txt"><b>Uni</b>Fatecie<small>Centro Universitário</small></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Principal">
+      <a href="#modalidades">Modalidades</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#valores">Valores</a>
+      <a href="#pos">Pós-graduação</a>
+      <a href="#polos">Polos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="btn btn--sm btn--o" data-open-enroll>Matricule-se</button>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="inicio">
+  <canvas id="hero3d" aria-hidden="true"></canvas>
+  <div class="hero__glow hero__glow--a"></div>
+  <div class="hero__glow hero__glow--b"></div>
+
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <span class="eyebrow reveal"><i></i> Polo Cajazeiras · Mega Polo UniFatecie</span>
+      <h1 class="reveal d1">Estude onde estiver.<br><span class="grad">Chegue onde quiser.</span></h1>
+      <p class="lead reveal d2">Graduação, segunda graduação e pós-graduação <b>100% EAD</b> com a qualidade de um Centro Universitário — e mensalidades a partir de <b>R$&nbsp;76,50</b>*.</p>
+      <div class="hero__btns reveal d3">
+        <button class="btn btn--o btn--lg" data-open-enroll>Quero me matricular <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+        <a class="btn btn--ghost btn--lg" href="#" data-wa="Olá! Vim pelo site e quero saber mais sobre os cursos da UniFatecie.">
+          <svg viewBox="0 0 24 24" class="ico-wa"><path d="M20.5 3.5A11.9 11.9 0 0 0 1.9 17.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5h0a11.9 11.9 0 0 0 8.5-20Zm-8.5 18.2h0a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.4.9.9-3.3-.2-.4a9.9 9.9 0 1 1 8.1 4.4Zm5.4-7.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6a.6.6 0 0 0 0-.6c-.1-.1-.7-1.6-.9-2.2s-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2.100.9 2.900 1 3.900.8a3.300 3.300 0 0 0 2.200-1.600 2.700 2.700 0 0 0 .2-1.600c-.1-.1-.3-.2-.6-.3Z"/></svg>
+          Falar no WhatsApp</a>
+      </div>
+      <ul class="hero__chips reveal d4">
+        <li><b>66%</b> de desconto*</li>
+        <li><b>100%</b> online</li>
+        <li><b>8</b> polos de apoio</li>
+      </ul>
+      <p class="fine reveal d4">*Mensalidade com desconto de campanha + pontualidade (Grupo Base). Consulte regulamento.</p>
+    </div>
+  </div>
+
+  <a href="#numeros" class="scrollcue" aria-label="Rolar para baixo"><span></span></a>
+</section>
+
+<!-- ===================== NÚMEROS ===================== -->
+<section class="numbers" id="numeros">
+  <div class="wrap numbers__grid">
+    <div class="num reveal"><b data-count="83">0</b><span>cursos de graduação</span></div>
+    <div class="num reveal d1"><b data-count="150" data-suffix="+">0</b><span>cursos de pós-graduação</span></div>
+    <div class="num reveal d2"><b data-count="66" data-suffix="%">0</b><span>de desconto nas mensalidades*</span></div>
+    <div class="num reveal d3"><b data-count="8">0</b><span>polos na PB, CE, RN e PE</span></div>
+  </div>
+</section>
+
+<!-- ===================== MODALIDADES ===================== -->
+<section class="sec sec--light" id="modalidades">
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow eyebrow--dark reveal"><i></i> Modalidades</span>
+      <h2 class="reveal d1">O caminho certo para<br>cada fase da sua carreira.</h2>
+      <p class="sub reveal d2">Escolha como começar. Todas as matrículas são feitas online, pelos canais oficiais da UniFatecie.</p>
+    </header>
+
+    <div class="cards4">
+      <article class="card3d reveal" data-tilt>
+        <div class="card3d__in">
+          <div class="card3d__ico"><svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2.500 9 2.500 12 0v-5"/></svg></div>
+          <h3>Graduação EAD</h3>
+          <p>Bacharelados, licenciaturas e tecnólogos com início imediato por Vestibular Online ou nota do ENEM.</p>
+          <ul><li>Desconto de <b>66%</b>+ na mensalidade</li><li>Anuidade de <b>R$ 49,90</b></li></ul>
+          <a class="link" href="#cursos">Ver os 83 cursos <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card3d reveal d1" data-tilt>
+        <div class="card3d__in">
+          <div class="card3d__ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Semipresencial</h3>
+          <p>Cursos da saúde, engenharias, licenciaturas e mais, com atividades práticas, estágios e encontros no polo.</p>
+          <ul><li>Apoio presencial no <b>polo</b></li><li>Laboratórios e estágios</li></ul>
+          <a class="link" href="#cursos" data-filter="semi">Ver cursos semipresenciais <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card3d reveal d2" data-tilt>
+        <div class="card3d__in">
+          <div class="card3d__ico"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></div>
+          <h3>2ª Graduação</h3>
+          <p>Já tem diploma? Aproveite seus estudos anteriores e conquiste uma nova formação em tempo reduzido.</p>
+          <ul><li>A partir de <b>6 meses</b> a 1 ano</li><li>Aproveitamento de estudos</li></ul>
+          <a class="link" href="#diploma">Como funciona <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card3d reveal d3" data-tilt>
+        <div class="card3d__in">
+          <div class="card3d__ico"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h3>Pós-Graduação</h3>
+          <p>Especializações e MBAs em 6 áreas: Educação, Gestão, Engenharia, Direito, Saúde e Inovação (IA).</p>
+          <ul><li>Matrícula <b>R$ 29,90</b></li><li>12 parcelas a partir de <b>R$ 29,90</b></li></ul>
+          <a class="link" href="#pos">Explorar pós <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIÊNCIA (scroll story) ===================== -->
+<section class="story" id="experiencia">
+  <div class="story__stick">
+    <div class="story__glow"></div>
+    <div class="wrap story__grid">
+      <div class="story__texts">
+        <span class="eyebrow"><i></i> Experiência EAD</span>
+        <div class="story__step is-on" data-step="0">
+          <h2>Sua sala de aula<br><span class="grad">cabe no bolso.</span></h2>
+          <p>Estude pelo celular, tablet ou computador. As aulas ficam disponíveis quando você precisar.</p>
+        </div>
+        <div class="story__step" data-step="1">
+          <h2>No seu ritmo,<br><span class="grad">sem pressa.</span></h2>
+          <p>Organize os estudos em volta da sua rotina — trabalho, família e vida. Você decide quando e onde.</p>
+        </div>
+        <div class="story__step" data-step="2">
+          <h2>E com apoio<br><span class="grad">de gente de verdade.</span></h2>
+          <p>Seu polo está por perto para tirar dúvidas, orientar a matrícula e acompanhar sua jornada.</p>
+        </div>
+        <div class="story__dots"><i class="on"></i><i></i><i></i></div>
+      </div>
+
+      <div class="story__stage" aria-hidden="true">
+        <div class="phone" id="phone">
+          <div class="phone__side"></div>
+          <div class="phone__body">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="ui__top"><img src="assets/logo-mark-light.png" alt=""><span>Olá, estudante!</span></div>
+              <div class="ui__ring">
+                <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" class="bg"/><circle cx="60" cy="60" r="50" class="fg" id="ring"/></svg>
+                <div><b id="ringTxt">0%</b><small>do módulo</small></div>
+              </div>
+              <div class="ui__list">
+                <div class="ui__item"><i></i><div><b>Aula 12 · Introdução</b><small>Vídeo · 18 min</small></div></div>
+                <div class="ui__item"><i></i><div><b>Atividade do módulo</b><small>Questionário</small></div></div>
+                <div class="ui__item"><i></i><div><b>Fórum de discussão</b><small>Participe</small></div></div>
+              </div>
+              <div class="ui__btn">Continuar estudando</div>
+            </div>
+          </div>
+        </div>
+        <div class="float f1">Mensalidade fixa<br><b>pagando em dia</b></div>
+        <div class="float f2">Matrícula<br><b>100% online</b></div>
+        <div class="float f3">Apoio no<br><b>polo</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CURSOS (finder) ===================== -->
+<section class="sec sec--light" id="cursos">
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow eyebrow--dark reveal"><i></i> Graduação EAD</span>
+      <h2 class="reveal d1">Encontre o seu curso.</h2>
+      <p class="sub reveal d2">83 opções de graduação. Pesquise pelo nome ou filtre por tipo — o valor da mensalidade já aparece em cada curso.</p>
+    </header>
+
+    <div class="finder reveal">
+      <label class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.500-3.500"/></svg>
+        <input id="q" type="search" placeholder="Pesquisar curso… (ex.: Pedagogia, Engenharia, Nutrição)" autocomplete="off">
+      </label>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por tipo">
+        <button class="chip on" data-f="todos">Todos</button>
+        <button class="chip" data-f="Bacharelado">Bacharelado</button>
+        <button class="chip" data-f="Licenciatura">Licenciatura</button>
+        <button class="chip" data-f="Tecnólogo">Tecnólogo</button>
+        <button class="chip" data-f="semi">Semipresencial</button>
+      </div>
+      <div class="finder__meta"><span id="count">83 cursos</span><span class="muted">Valores mensais pagando até o vencimento</span></div>
+    </div>
+
+    <div class="grid-courses" id="courses"></div>
+    <p class="empty" id="empty" hidden>Nenhum curso encontrado. Tente outro nome ou fale com a gente no WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ===================== VALORES ===================== -->
+<section class="sec sec--dark" id="valores">
+  <div class="glow-bg"></div>
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow reveal"><i></i> Investimento</span>
+      <h2 class="reveal d1">Mensalidades que cabem<br><span class="grad">no seu planejamento.</span></h2>
+      <p class="sub reveal d2">Mais de 66% de desconto sobre o valor cheio. Selecione o grupo do seu curso.</p>
+    </header>
+
+    <div class="tiers reveal" id="tiers" role="tablist" aria-label="Grupos de cursos"></div>
+
+    <div class="price3d reveal" id="priceCard" data-tilt data-tilt-max="6">
+      <div class="price3d__in">
+        <div class="price3d__l">
+          <span class="badge" id="pGroup">Base</span>
+          <p class="price__label">Mensalidade pagando em dia</p>
+          <div class="price__big"><small>R$</small><b id="pValue">76,50</b><span>/mês</span></div>
+          <p class="price__old">Valor cheio <s id="pFull">R$ 225,00</s> · <b id="pOff">66% OFF</b></p>
+          <div class="price__btns">
+            <a class="btn btn--o" id="pBtn" href="#" target="_blank" rel="noopener">Matricular-se</a>
+            <a class="btn btn--ghost" href="#cursos" id="pSee">Ver cursos do grupo</a>
+          </div>
+        </div>
+        <ul class="price3d__r">
+          <li><i>1</i><div><b>Anuidade R$ 49,90</b><small>paga no ato da inscrição</small></div></li>
+          <li><i>2</i><div><b>Desconto de pontualidade</b><small>pague até o vencimento e mantenha o valor</small></div></li>
+          <li><i>3</i><div><b id="pCoursesQty">4 cursos</b><small id="pCoursesNames">neste grupo</small></div></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine center reveal">Valores do Módulo 3/2026 (graduação). Após o vencimento perde-se o desconto de pontualidade. Captações por polos/sede podem utilizar outras tabelas. Condições conforme regulamento.</p>
+  </div>
+</section>
+
+<!-- ===================== PÓS ===================== -->
+<section class="sec sec--light" id="pos">
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow eyebrow--dark reveal"><i></i> Pós-Graduação EAD</span>
+      <h2 class="reveal d1">Especialize-se.<br>Aprenda rápido. Vá mais longe.</h2>
+      <p class="sub reveal d2">Mais de 150 cursos de pós-graduação lato sensu em 6 áreas — para qualquer profissional com diploma de graduação.</p>
+    </header>
+
+    <div class="pos reveal">
+      <div class="pos__tabs" id="posTabs" role="tablist"></div>
+      <div class="pos__panel" id="posPanel">
+        <div class="pos__plan">
+          <span class="badge badge--o" id="posQtd"></span>
+          <h3 id="posName"></h3>
+          <div class="plan">
+            <div><small>Taxa de matrícula</small><b>R$ 29,90</b></div>
+            <i>+</i>
+            <div><small>12 parcelas de</small><b id="posParcela"></b></div>
+          </div>
+          <a class="btn btn--o" href="#" id="posBtn" target="_blank" rel="noopener">Matricular na pós</a>
+        </div>
+        <div class="pos__courses">
+          <p class="muted">Alguns cursos da área</p>
+          <ul id="posList"></ul>
+          <a class="link" data-wa="Olá! Quero ver a lista completa de cursos de pós-graduação." href="#">Ver a lista completa no WhatsApp <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="subhead reveal">Especializações em destaque</h3>
+    <div class="destaque" id="destaque"></div>
+
+    <ul class="facts reveal">
+      <li><b>Sem exigência de graduação específica</b><span>Qualquer diploma de graduação reconhecido.</span></li>
+      <li><b>TCC opcional</b><span>Escolha fazer ou não (taxa única de R$ 207,00 se optar).</span></li>
+      <li><b>Conclusão em até 18 meses</b><span>Prazo máximo a partir do início do curso.</span></li>
+    </ul>
+    <p class="fine center reveal">Valores da campanha de Setembro/2026. A pós-graduação não substitui a graduação exigida para profissões regulamentadas — verifique os requisitos junto ao órgão competente.</p>
+  </div>
+</section>
+
+<!-- ===================== SEGUNDA GRADUAÇÃO ===================== -->
+<section class="sec sec--dark" id="diploma">
+  <div class="glow-bg glow-bg--2"></div>
+  <div class="wrap diploma">
+    <div class="diploma__copy">
+      <span class="eyebrow reveal"><i></i> Portador de diploma</span>
+      <h2 class="reveal d1">Já é formado?<br><span class="grad">Estude menos, conquiste mais.</span></h2>
+      <p class="sub reveal d2">Com a 2ª graduação, seus estudos anteriores são aproveitados e o curso fica mais curto: <b>a partir de 6 meses</b> (tecnólogos) ou <b>1 ano</b> (bacharelados e licenciaturas), em 12 mensalidades.</p>
+      <ul class="checks reveal d3">
+        <li>Disponível nos Grupos Base, 01, 02, 03 e 04</li>
+        <li>Mesmas mensalidades com +66% de desconto</li>
+        <li>Anuidade de R$ 49,90 no ato da inscrição</li>
+        <li>Envie diploma e histórico da 1ª graduação</li>
+      </ul>
+      <a class="btn btn--o btn--lg reveal d4" href="#" id="diplomaBtn" target="_blank" rel="noopener">Quero minha 2ª graduação <svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <p class="fine reveal d4">Link exclusivo do Polo Cajazeiras.</p>
+    </div>
+
+    <div class="diploma__stack reveal d2" aria-hidden="true">
+      <div class="layer l1"><b>1º</b><span>Diploma</span></div>
+      <div class="layer l2"><b>+</b><span>Aproveitamento de estudos</span></div>
+      <div class="layer l3"><b>2º</b><span>Nova graduação</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMO INGRESSAR ===================== -->
+<section class="sec sec--light" id="ingresso">
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow eyebrow--dark reveal"><i></i> Como ingressar</span>
+      <h2 class="reveal d1">Três passos para começar.</h2>
+    </header>
+    <ol class="steps">
+      <li class="step reveal" data-tilt data-tilt-max="8"><span>01</span><h3>Escolha seu curso</h3><p>Navegue pelas opções de graduação ou pós e escolha a que combina com seus objetivos.</p></li>
+      <li class="step reveal d1" data-tilt data-tilt-max="8"><span>02</span><h3>Faça a inscrição online</h3><p>Entre pelo Vestibular Online ou use sua nota do ENEM. Pelos links oficiais, em poucos minutos.</p></li>
+      <li class="step reveal d2" data-tilt data-tilt-max="8"><span>03</span><h3>Pague e comece</h3><p>Graduação: anuidade de R$ 49,90. Pós-graduação: matrícula de R$ 29,90. Pronto — é só estudar.</p></li>
+    </ol>
+    <div class="center reveal"><button class="btn btn--o btn--lg" data-open-enroll>Iniciar minha matrícula</button></div>
+  </div>
+</section>
+
+<!-- ===================== POLOS ===================== -->
+<section class="sec sec--dark" id="polos">
+  <div class="glow-bg"></div>
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow reveal"><i></i> Nossos polos</span>
+      <h2 class="reveal d1">Perto de você,<br><span class="grad">em 4 estados.</span></h2>
+      <p class="sub reveal d2">Toque em um polo no mapa. Cajazeiras é o nosso Mega Polo.</p>
+    </header>
+
+    <div class="polos reveal">
+      <div class="map" id="map">
+        <svg viewBox="0 0 800 440" id="mapSvg" role="img" aria-label="Mapa esquemático dos polos"></svg>
+      </div>
+      <aside class="polo__info" id="poloInfo">
+        <span class="badge badge--o" id="poloTag">Mega Polo</span>
+        <h3 id="poloName">Cajazeiras</h3>
+        <p id="poloState">Paraíba</p>
+        <p class="polo__addr" id="poloAddr"></p>
+        <a class="btn btn--o" href="#" data-wa="Olá! Quero informações sobre o polo." id="poloWa">Falar com o polo</a>
+      </aside>
+    </div>
+    <ul class="polo__list reveal" id="poloList"></ul>
+  </div>
+</section>
+
+<!-- ===================== CONTATO ===================== -->
+<section class="sec sec--light" id="contato">
+  <div class="wrap">
+    <header class="sec__head center">
+      <span class="eyebrow eyebrow--dark reveal"><i></i> Contato</span>
+      <h2 class="reveal d1">Vamos conversar?</h2>
+      <p class="sub reveal d2">Venha nos visitar ou chame no WhatsApp. Atendemos para tirar dúvidas e fazer sua matrícula.</p>
+    </header>
+
+    <div class="contact">
+      <div class="contact__cards">
+        <a class="ccard ccard--wa reveal" href="#" data-wa="Olá! Quero fazer minha matrícula na UniFatecie.">
+          <span class="ccard__ico"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 1.9 17.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5h0a11.9 11.9 0 0 0 8.5-20Z"/></svg></span>
+          <div><small>WhatsApp</small><b id="waShow">(83) 9105-4923</b><em>Toque para conversar</em></div>
+        </a>
+        <a class="ccard reveal d1" id="addrCard" href="#" target="_blank" rel="noopener">
+          <span class="ccard__ico"><svg viewBox="0 0 24 24"><path d="M12 22s7-6.200 7-12a7 7 0 1 0-14 0c0 5.800 7 12 7 12Z"/><circle cx="12" cy="10" r="2.500"/></svg></span>
+          <div><small>Endereço</small><b>Av. Comandante Vital Rolim, 1346</b><em>Santa Cecília · próximo ao Hotel Oásis · Cajazeiras-PB</em></div>
+        </a>
+        <a class="ccard reveal d2" id="siteCard" href="#" target="_blank" rel="noopener">
+          <span class="ccard__ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+          <div><small>Site oficial</small><b>unifatecie.edu.br</b><em>Mais informações institucionais</em></div>
+        </a>
+        <div class="links reveal d3">
+          <p class="muted">Links de matrícula</p>
+          <a class="lnk" id="lnkGrad" href="#" target="_blank" rel="noopener"><span>Graduação</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="lnk" id="lnkPos" href="#" target="_blank" rel="noopener"><span>Pós-Graduação</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <a class="lnk" id="lnkSeg" href="#" target="_blank" rel="noopener"><span>2ª Graduação — Cajazeiras</span><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+      <div class="contact__map reveal d2">
+        <iframe id="mapFrame" title="Mapa do endereço do polo Cajazeiras" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="sec sec--gray" id="faq">
+  <div class="wrap wrap--s">
+    <header class="sec__head center">
+      <span class="eyebrow eyebrow--dark reveal"><i></i> Dúvidas</span>
+      <h2 class="reveal d1">Perguntas frequentes</h2>
+    </header>
+    <div class="faq reveal">
+      <details><summary>Como faço a matrícula?</summary><p>A matrícula é 100% online, pelos links oficiais da UniFatecie. Na graduação, você ingressa por Vestibular Online ou nota do ENEM. Se preferir, chame o polo no WhatsApp e nós te ajudamos em todos os passos.</p></details>
+      <details><summary>Quanto pago para me matricular?</summary><p>Na graduação, a anuidade é de R$ 49,90 paga no ato da inscrição. Na pós-graduação, a taxa de matrícula é de R$ 29,90. A primeira mensalidade da graduação da campanha atual vence em setembro de 2026.</p></details>
+      <details><summary>O que é o desconto de pontualidade?</summary><p>Pagando a parcela até a data de vencimento você paga o menor valor da tabela. Após o vencimento, o desconto de pontualidade é perdido.</p></details>
+      <details><summary>Quem pode fazer pós-graduação?</summary><p>Qualquer profissional com diploma de graduação reconhecido, independentemente da área de formação. A conclusão da graduação deve ser anterior à data da inscrição na pós. TCC é opcional.</p></details>
+      <details><summary>O que preciso para a 2ª graduação?</summary><p>Diploma e histórico escolar da primeira graduação, para análise de aproveitamento de estudos. Para alguns cursos há pré-requisitos de formação específicos — nossa equipe confere com você.</p></details>
+      <details><summary>Quais são os polos de atendimento?</summary><p>Cajazeiras-PB (Mega Polo), São José de Piranhas-PB, Patos-PB, Itaporanga-PB, Pombal-PB, Icó-CE, Caicó-RN e Jaboatão dos Guararapes-PE.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="final">
+  <div class="final__glow"></div>
+  <div class="wrap center">
+    <img src="assets/logo-mark-light.png" alt="" class="final__logo reveal" width="84" height="84">
+    <h2 class="reveal d1">Seu próximo capítulo<br><span class="grad">começa agora.</span></h2>
+    <p class="sub reveal d2">Garanta sua vaga com as condições da campanha vigente.</p>
+    <div class="hero__btns reveal d3" style="justify-content:center">
+      <button class="btn btn--o btn--lg" data-open-enroll>Matricule-se agora</button>
+      <a class="btn btn--ghost btn--lg" href="#" data-wa="Olá! Quero fazer minha matrícula na UniFatecie.">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <img src="assets/logo-full-white.png" alt="UniFatecie Centro Universitário" class="foot__logo" width="200" height="58">
+      <p class="muted">Polo Cajazeiras — Mega Polo UniFatecie.<br>Av. Comandante Vital Rolim, 1346, Santa Cecília<br>Próximo ao Hotel Oásis · Cajazeiras-PB</p>
+    </div>
+    <div>
+      <h4>Navegue</h4>
+      <a href="#modalidades">Modalidades</a><a href="#cursos">Cursos</a><a href="#valores">Valores</a><a href="#pos">Pós-graduação</a><a href="#polos">Polos</a>
+    </div>
+    <div>
+      <h4>Matrícula</h4>
+      <a id="fGrad" href="#" target="_blank" rel="noopener">Graduação</a>
+      <a id="fPos" href="#" target="_blank" rel="noopener">Pós-Graduação</a>
+      <a id="fSeg" href="#" target="_blank" rel="noopener">2ª Graduação</a>
+      <a id="fSite" href="#" target="_blank" rel="noopener">Site oficial</a>
+    </div>
+    <div>
+      <h4>Fale conosco</h4>
+      <a href="#" data-wa="Olá! Vim pelo site.">WhatsApp <span id="fWa">(83) 9105-4923</span></a>
+      <a id="fMap" href="#" target="_blank" rel="noopener">Como chegar</a>
+    </div>
+  </div>
+  <div class="wrap foot__legal">
+    <p>Valores e condições conforme os regulamentos das campanhas vigentes (Graduação EAD MOD. 3/2026 e Pós-Graduação EAD Setembro/2026), sujeitos a alteração pela instituição. Descontos válidos para novos ingressantes e para pagamento até o vencimento.</p>
+    <p>© <span id="year">2026</span> UniFatecie Centro Universitário — Polo Cajazeiras.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wa-fab" href="#" data-wa="Olá! Vim pelo site e quero mais informações." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.9 11.9 0 0 0 1.9 17.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5h0a11.9 11.9 0 0 0 8.5-20Z"/></svg>
+</a>
+
+<!-- Modal de matrícula -->
+<dialog class="modal" id="enroll">
+  <div class="modal__in">
+    <button class="modal__x" data-close aria-label="Fechar">×</button>
+    <h3>Como você quer estudar?</h3>
+    <p class="muted">Escolha a modalidade para ir direto à matrícula oficial.</p>
+    <div class="opts">
+      <a class="opt" id="oGrad" href="#" target="_blank" rel="noopener"><b>Graduação</b><span>Bacharelado, licenciatura e tecnólogo</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="opt" id="oSeg" href="#" target="_blank" rel="noopener"><b>2ª Graduação</b><span>Para quem já tem diploma</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="opt" id="oPos" href="#" target="_blank" rel="noopener"><b>Pós-Graduação</b><span>Especializações e MBAs</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      <a class="opt opt--wa" href="#" data-wa="Olá! Quero ajuda para fazer minha matrícula."><b>Prefiro falar com alguém</b><span>Atendimento no WhatsApp</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/logo-data.js"></script>
+<script src="js/hero3d.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
