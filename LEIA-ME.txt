@@ -2,13 +2,13 @@ LANDING PAGE UNIFATECIE EAD
 ===========================
 Abrir: dê dois cliques em index.html (precisa de internet só para a fonte Inter; o resto é local).
 
-Para trocar telefone, endereço, links de matrícula, valores, cursos ou polos:
+Para trocar telefone, endereço, valores, cursos ou polos:
   edite apenas  js/data.js
 
 Pastas:
   index.html    estrutura da página (inclui a barra inferior "dock")
   css/style.css visual (mobile-first)
-  js/data.js    TODOS os dados (contato, links, valores, cursos, polos)
+  js/data.js    TODOS os dados (contato, valores, cursos, polos). Matrícula = WhatsApp com mensagem pronta (montada em main.js)
   js/hero.js    logo 3D do topo (CSS 3D, sem bibliotecas)
   js/main.js    interações (dock, busca, valores, pós, mapa)
   assets/       logos leves e imagem de compartilhamento (og.jpg)

@@ -21,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="assets/mark-front.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=4">
 <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
@@ -118,7 +118,7 @@
     <header class="sec__head center">
       <span class="eyebrow eyebrow--dark reveal"><i></i> Modalidades</span>
       <h2 class="reveal d1">O caminho certo para cada fase da sua carreira.</h2>
-      <p class="sub reveal d2">Todas as matrículas são feitas online, pelos canais oficiais da UniFatecie.</p>
+      <p class="sub reveal d2">Toque em qualquer opção e fale direto com o polo no WhatsApp, com a mensagem já pronta.</p>
     </header>
   </div>
   <div class="snap">
@@ -263,7 +263,7 @@
           <div class="price__big"><small>R$</small><b id="pValue">76,50</b><span>/mês</span></div>
           <p class="price__old">Valor cheio <s id="pFull">R$ 225,00</s> · <b id="pOff">66% OFF</b></p>
           <div class="price__btns">
-            <a class="btn btn--o" id="pBtn" href="#" target="_blank" rel="noopener">Matricular-se</a>
+            <a class="btn btn--o" id="pBtn" href="#" target="_blank" rel="noopener"><svg class="ic ic--f"><use href="#i-wa"/></svg> Quero me matricular</a>
             <a class="btn btn--ghost" href="#cursos" id="pSee">Ver cursos do grupo</a>
           </div>
         </div>
@@ -298,7 +298,7 @@
             <i>+</i>
             <div><small>12 parcelas de</small><b id="posParcela"></b></div>
           </div>
-          <a class="btn btn--o" href="#" id="posBtn" target="_blank" rel="noopener">Matricular na pós</a>
+          <a class="btn btn--o" href="#" id="posBtn" target="_blank" rel="noopener"><svg class="ic ic--f"><use href="#i-wa"/></svg> Matricular na pós</a>
         </div>
         <div class="pos__courses">
           <p class="muted">Alguns cursos da área</p>
@@ -337,8 +337,8 @@
         <li>Anuidade de R$ 49,90 no ato da inscrição</li>
         <li>Envie diploma e histórico da 1ª graduação</li>
       </ul>
-      <a class="btn btn--o btn--lg reveal d4" href="#" id="diplomaBtn" target="_blank" rel="noopener">Quero minha 2ª graduação <svg class="ic"><use href="#i-arrow"/></svg></a>
-      <p class="fine reveal d4">Link exclusivo do Polo Cajazeiras.</p>
+      <a class="btn btn--o btn--lg reveal d4" href="#" data-wa="Olá! Já tenho diploma e quero fazer uma 2ª graduação. Pode me explicar como funciona o aproveitamento de estudos e me ajudar com a matrícula?"><svg class="ic ic--f"><use href="#i-wa"/></svg> Quero minha 2ª graduação</a>
+      <p class="fine reveal d4">Atendimento direto pelo WhatsApp do Polo Cajazeiras.</p>
     </div>
 
     <div class="diploma__stack reveal d2" aria-hidden="true">
@@ -358,7 +358,7 @@
     </header>
     <ol class="steps">
       <li class="step reveal" data-tilt data-tilt-max="8"><span>01</span><h3>Escolha seu curso</h3><p>Navegue pelas opções de graduação ou pós e escolha a que combina com seus objetivos.</p></li>
-      <li class="step reveal d1" data-tilt data-tilt-max="8"><span>02</span><h3>Faça a inscrição online</h3><p>Entre pelo Vestibular Online ou use sua nota do ENEM, pelos links oficiais, em poucos minutos.</p></li>
+      <li class="step reveal d1" data-tilt data-tilt-max="8"><span>02</span><h3>Chame o polo no WhatsApp</h3><p>Toque no curso e a mensagem já vai pronta. Nós fazemos sua inscrição online (Vestibular Online ou nota do ENEM).</p></li>
       <li class="step reveal d2" data-tilt data-tilt-max="8"><span>03</span><h3>Pague e comece</h3><p>Graduação: anuidade de R$ 49,90. Pós-graduação: matrícula de R$ 29,90. Pronto — é só estudar.</p></li>
     </ol>
     <div class="center reveal"><button class="btn btn--o btn--lg" data-open-enroll>Iniciar minha matrícula</button></div>
@@ -413,10 +413,10 @@
           <div><small>Site oficial</small><b>unifatecie.edu.br</b><em>Mais informações institucionais</em></div>
         </a>
         <div class="links reveal d3">
-          <p class="muted">Links de matrícula</p>
-          <a class="lnk" id="lnkGrad" href="#" target="_blank" rel="noopener"><span>Graduação</span><svg class="ic"><use href="#i-ext"/></svg></a>
-          <a class="lnk" id="lnkPos" href="#" target="_blank" rel="noopener"><span>Pós-Graduação</span><svg class="ic"><use href="#i-ext"/></svg></a>
-          <a class="lnk" id="lnkSeg" href="#" target="_blank" rel="noopener"><span>2ª Graduação — Cajazeiras</span><svg class="ic"><use href="#i-ext"/></svg></a>
+          <p class="muted">Matrícula pelo WhatsApp</p>
+          <a class="lnk" href="#" data-wa="Olá! Quero me matricular na graduação EAD. Pode me ajudar a escolher o curso e fazer a inscrição?"><span>Graduação</span><svg class="ic ic--f"><use href="#i-wa"/></svg></a>
+          <a class="lnk" href="#" data-wa="Olá! Quero me matricular na pós-graduação EAD. Pode me ajudar a escolher o curso e fazer a inscrição?"><span>Pós-Graduação</span><svg class="ic ic--f"><use href="#i-wa"/></svg></a>
+          <a class="lnk" href="#" data-wa="Olá! Já tenho diploma e quero fazer uma 2ª graduação. Pode me ajudar com a matrícula?"><span>2ª Graduação</span><svg class="ic ic--f"><use href="#i-wa"/></svg></a>
         </div>
       </div>
 
@@ -443,7 +443,7 @@
       <h2 class="reveal d1">Perguntas frequentes</h2>
     </header>
     <div class="faq reveal">
-      <details><summary>Como faço a matrícula?</summary><p>A matrícula é 100% online, pelos links oficiais da UniFatecie. Na graduação, você ingressa por Vestibular Online ou nota do ENEM. Se preferir, chame o polo no WhatsApp e nós te ajudamos em todos os passos.</p></details>
+      <details><summary>Como faço a matrícula?</summary><p>É só chamar o polo no WhatsApp (os botões do site já enviam a mensagem pronta) e nós te ajudamos em todos os passos. A inscrição é online e, na graduação, você ingressa por Vestibular Online ou nota do ENEM.</p></details>
       <details><summary>Quanto pago para me matricular?</summary><p>Na graduação, a anuidade é de R$ 49,90 paga no ato da inscrição. Na pós-graduação, a taxa de matrícula é de R$ 29,90. A primeira mensalidade da graduação da campanha atual vence em setembro de 2026.</p></details>
       <details><summary>O que é o desconto de pontualidade?</summary><p>Pagando a parcela até a data de vencimento você paga o menor valor da tabela. Após o vencimento, o desconto de pontualidade é perdido.</p></details>
       <details><summary>Quem pode fazer pós-graduação?</summary><p>Qualquer profissional com diploma de graduação reconhecido, independentemente da área de formação. A conclusão da graduação deve ser anterior à data da inscrição na pós. TCC é opcional.</p></details>
@@ -482,9 +482,9 @@
     </div>
     <div>
       <h4>Matrícula</h4>
-      <a id="fGrad" href="#" target="_blank" rel="noopener">Graduação</a>
-      <a id="fPos" href="#" target="_blank" rel="noopener">Pós-Graduação</a>
-      <a id="fSeg" href="#" target="_blank" rel="noopener">2ª Graduação</a>
+      <a href="#" data-wa="Olá! Quero me matricular na graduação EAD. Pode me ajudar?">Graduação</a>
+      <a href="#" data-wa="Olá! Quero me matricular na pós-graduação EAD. Pode me ajudar?">Pós-Graduação</a>
+      <a href="#" data-wa="Olá! Já tenho diploma e quero fazer uma 2ª graduação. Pode me ajudar?">2ª Graduação</a>
       <a id="fSite" href="#" target="_blank" rel="noopener">Site oficial</a>
     </div>
     <div>
@@ -519,18 +519,18 @@
     <i class="modal__grab" aria-hidden="true"></i>
     <button class="modal__x" data-close aria-label="Fechar">×</button>
     <h3>Como você quer estudar?</h3>
-    <p class="muted">Escolha a modalidade para ir direto à matrícula oficial.</p>
+    <p class="muted">Escolha a modalidade e fale com o polo no WhatsApp — a mensagem já vai pronta.</p>
     <div class="opts">
-      <a class="opt" id="oGrad" href="#" target="_blank" rel="noopener"><b>Graduação</b><span>Bacharelado, licenciatura e tecnólogo</span><svg class="ic"><use href="#i-arrow"/></svg></a>
-      <a class="opt" id="oSeg" href="#" target="_blank" rel="noopener"><b>2ª Graduação</b><span>Para quem já tem diploma</span><svg class="ic"><use href="#i-arrow"/></svg></a>
-      <a class="opt" id="oPos" href="#" target="_blank" rel="noopener"><b>Pós-Graduação</b><span>Especializações e MBAs</span><svg class="ic"><use href="#i-arrow"/></svg></a>
-      <a class="opt opt--wa" href="#" data-wa="Olá! Quero ajuda para fazer minha matrícula."><b>Prefiro falar com alguém</b><span>Atendimento no WhatsApp</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt" href="#" data-wa="Olá! Quero me matricular na graduação EAD (bacharelado, licenciatura ou tecnólogo). Pode me ajudar a escolher o curso?"><b>Graduação</b><span>Bacharelado, licenciatura e tecnólogo</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt" href="#" data-wa="Olá! Já tenho diploma e quero fazer uma 2ª graduação. Pode me explicar como funciona e me ajudar com a matrícula?"><b>2ª Graduação</b><span>Para quem já tem diploma</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt" href="#" data-wa="Olá! Quero me matricular em uma pós-graduação EAD (especialização ou MBA). Pode me ajudar a escolher o curso?"><b>Pós-Graduação</b><span>Especializações e MBAs</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="opt opt--wa" href="#" data-wa="Olá! Tenho algumas dúvidas antes de me matricular."><b>Tenho dúvidas</b><span>Conversar com o polo no WhatsApp</span><svg class="ic"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
 </dialog>
 
-<script src="js/data.js?v=3" defer></script>
-<script src="js/hero.js?v=3" defer></script>
-<script src="js/main.js?v=3" defer></script>
+<script src="js/data.js?v=4" defer></script>
+<script src="js/hero.js?v=4" defer></script>
+<script src="js/main.js?v=4" defer></script>
 </body>
 </html>

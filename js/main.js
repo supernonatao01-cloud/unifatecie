@@ -11,7 +11,7 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
   var norm = function (s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); };
-  var ICON_ARROW = '<svg class="ic"><use href="#i-arrow"/></svg>';
+  var ICON_WA = '<svg class="ic ic--f"><use href="#i-wa"/></svg>';
 
   /* ---------- contatos e links (fonte única: data.js) ---------- */
   function setHref(id, url) { var el = document.getElementById(id); if (el) el.href = url; }
@@ -19,9 +19,7 @@
   var mapQ = encodeURIComponent(U.contato.mapa);
 
   $$('[data-wa]').forEach(function (a) { a.href = waUrl(a.getAttribute('data-wa')); a.target = '_blank'; a.rel = 'noopener'; });
-  ['lnkGrad', 'fGrad', 'oGrad'].forEach(function (i) { setHref(i, U.links.graduacao); });
-  ['lnkPos', 'fPos', 'oPos', 'posBtn'].forEach(function (i) { setHref(i, U.links.pos); });
-  ['lnkSeg', 'fSeg', 'oSeg', 'diplomaBtn'].forEach(function (i) { setHref(i, U.links.segundaGraduacao); });
+  /* Matrícula: sem links externos — todo botão abre o WhatsApp com mensagem pronta do item clicado */
   ['siteCard', 'fSite'].forEach(function (i) { setHref(i, U.links.site); });
   ['addrCard', 'fMap', 'mapOpen'].forEach(function (i) { setHref(i, 'https://www.google.com/maps/search/?api=1&query=' + mapQ); });
   $('#waShow').textContent = U.contato.whatsappExibicao;
@@ -176,6 +174,10 @@
     return { nome: c[0], grau: c[1], anos: c[2], grupo: c[3], semi: !!c[4], preco: G[c[3]].pontual, key: norm(c[0] + ' ' + c[1]) };
   });
 
+  function courseMsg(c) {
+    return 'Olá! Quero me matricular no curso de ' + c.nome + ' (' + c.grau + ', ' + fmtYears(c.anos) + (c.semi ? ', semipresencial' : ', 100% EAD') +
+      '), com mensalidade a partir de R$ ' + brl(c.preco) + '. Pode me ajudar com a matrícula?';
+  }
   function cardHtml(c, i) {
     return '<article class="course" style="animation-delay:' + Math.min(i % PAGE, 11) * 30 + 'ms">' +
       '<div class="course__tags"><span class="tag tag--o">' + c.grau + '</span>' +
@@ -183,7 +185,7 @@
       '<h4>' + c.nome + '</h4>' +
       '<div class="course__tags"><span class="tag">' + fmtYears(c.anos) + '</span><span class="tag">' + G[c.grupo].nome + '</span></div>' +
       '<div class="course__foot"><div class="course__price"><small>a partir de</small><b>R$ ' + brl(c.preco) + ' <span>/mês</span></b></div>' +
-      '<a class="course__go" href="' + U.links.graduacao + '" target="_blank" rel="noopener" aria-label="Matricular em ' + c.nome + '">' + ICON_ARROW + '</a></div></article>';
+      '<a class="course__go" href="' + waUrl(courseMsg(c)) + '" target="_blank" rel="noopener" aria-label="Matricular em ' + c.nome + ' pelo WhatsApp">' + ICON_WA + 'Matricular</a></div></article>';
   }
 
   function filterCourses() {
@@ -258,7 +260,7 @@
     $('#pCoursesQty').textContent = qty.length + (qty.length === 1 ? ' curso' : ' cursos') + ' neste grupo';
     var names = qty.slice(0, 3).map(function (c) { return c.nome; });
     $('#pCoursesNames').textContent = names.join(', ') + (qty.length > 3 ? ' e mais ' + (qty.length - 3) : '');
-    $('#pBtn').href = U.links.graduacao;
+    $('#pBtn').href = waUrl('Olá! Tenho interesse nos cursos do ' + (k === 'BASE' ? 'Grupo Base' : g.nome) + ' da graduação EAD (mensalidade a partir de R$ ' + brl(g.pontual) + '). Pode me passar os cursos desse grupo e me ajudar com a matrícula?');
     tweenPrice(g.pontual);
   }
   tiersEl.addEventListener('click', function (e) { var b = e.target.closest('.tier'); if (b) { selectTier(b.getAttribute('data-k')); centerInRow(b); } });
@@ -280,7 +282,12 @@
     $('#posQtd').textContent = c.qtd + ' cursos';
     $('#posName').textContent = c.nome;
     $('#posParcela').textContent = 'R$ ' + brl(c.parcela);
-    $('#posList').innerHTML = c.cursos.map(function (n, k) { return '<li style="animation-delay:' + k * 40 + 'ms">' + n + '</li>'; }).join('');
+    $('#posBtn').href = waUrl('Olá! Quero me matricular em uma pós-graduação na área de ' + c.nome + ' (matrícula de R$ 29,90 + 12x de R$ ' + brl(c.parcela) + '). Pode me ajudar a escolher o curso?');
+    $('#posBtn').target = '_blank'; $('#posBtn').rel = 'noopener';
+    $('#posList').innerHTML = c.cursos.map(function (n, k) {
+      var msg = 'Olá! Quero me matricular na pós-graduação em ' + n + ' (área de ' + c.nome + ', 12x de R$ ' + brl(c.parcela) + '). Pode me ajudar com a matrícula?';
+      return '<li style="animation-delay:' + k * 40 + 'ms"><a href="' + waUrl(msg) + '" target="_blank" rel="noopener">' + n + '</a></li>';
+    }).join('');
   }
   tabs.addEventListener('click', function (e) { var b = e.target.closest('.ptab'); if (b) { selectCluster(+b.getAttribute('data-i')); centerInRow(b); } });
   selectCluster(0);
@@ -289,7 +296,8 @@
     var parc = d.parcela || 47.90;
     return '<article class="dest reveal" data-tilt data-tilt-max="9" style="transition-delay:' + (i * 0.06) + 's"><h4>' + d.nome + '</h4>' +
       '<div class="dest__meta"><span class="tag">' + String(d.meses).padStart(2, '0') + ' meses</span><span class="tag">' + d.horas + 'h</span>' + (d.estagio ? '<span class="tag tag--o">Com estágio</span>' : '') + '</div>' +
-      '<p class="dest__price">Matrícula R$ 29,90 + 12x <b>R$ ' + brl(parc) + '</b></p></article>';
+      '<p class="dest__price">Matrícula R$ 29,90 + 12x <b>R$ ' + brl(parc) + '</b></p>' +
+      '<a class="link" target="_blank" rel="noopener" href="' + waUrl('Olá! Quero me matricular na Especialização em ' + d.nome + ' (' + d.meses + ' meses, ' + d.horas + 'h), matrícula de R$ 29,90 + 12x de R$ ' + brl(parc) + '. Pode me ajudar com a matrícula?') + '">' + ICON_WA + 'Quero esta especialização</a></article>';
   }).join('');
   $$('#destaque .reveal').forEach(function (el) { revObs.observe(el); });
   initTilt($('#destaque'));

@@ -13,10 +13,8 @@ window.UNI = {
     mapa: "Avenida Comandante Vital Rolim, 1346, Santa Cecília, Cajazeiras, PB"
   },
 
+  /* Matrícula agora é 100% via WhatsApp (mensagem pronta por item). Só resta o site institucional. */
   links: {
-    pos: "https://matriculapos.fatecie.edu.br/inscription?origem=polo",
-    graduacao: "https://matriculasunifatecie.com.br/",
-    segundaGraduacao: "https://segundagraduacao.fatecie.edu.br/?origem=polo&polo=P30uTYPnlTPKA9EqdDvrYQ==",
     site: "https://www.unifatecie.edu.br"
   },
 
